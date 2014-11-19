@@ -1,0 +1,85 @@
+html, html *
+{
+    outline: none !important;
+}
+
+html
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color: #FFF;
+    color: #333;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.content
+{
+    padding: 10px;
+}
+
+#header
+{
+    position: relative;
+    background-color: rgba(0,0,0,.3);
+    border-bottom: solid 1px #1a1a1a;
+}
+
+#pageSlide, #headlines, #footer, #frontContent
+{
+    border: solid 1px #3D3F3F;
+    border-width: 0 0 1px 0;
+}
+
+#imageSlider
+{
+    background-color: #AAA;
+    position: relative;
+    width: 960px;
+    height: 270px;
+}
+
+#frontContent
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer
+{
+    background-color: #000;
+}
+
+#footerContent
+{
+    text-align: right;
+    color: #FFF;
+}
+
+#overview {
+    padding-top: 50px;
+    background-color: #DDD;
+    color: rgb(0,122,255);
+    /*background-image: url(images/navbg.png);*/
+}
+
+#mainMenu {
+    margin: auto;
+}
+
+#problemList .well, #problemSelected .well {
+    height: 200px;
+    overflow: auto;
+}
+
+#solution {
+
+}

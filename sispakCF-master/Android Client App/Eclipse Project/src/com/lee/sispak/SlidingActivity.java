@@ -1,0 +1,52 @@
+package com.lee.sispak;
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.MenuItem;
+
+public class SlidingActivity extends Activity {
+	int onStartCount = 0;
+
+    @SuppressLint("NewApi")
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        try {
+        	getActionBar().setDisplayHomeAsUpEnabled(true);
+        	getActionBar().setHomeButtonEnabled(true);
+        } catch(Exception e){
+        	
+        }
+        onStartCount = 1;
+        if (savedInstanceState == null) // 1st time
+        {
+            this.overridePendingTransition(R.anim.slide_in_left,
+                    R.anim.slide_out_left);
+        } else // already created so reverse animation
+        { 
+            onStartCount = 2;
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        // TODO Auto-generated method stub
+        super.onStart();
+        if (onStartCount > 1) {
+            this.overridePendingTransition(R.anim.slide_in_right,
+                    R.anim.slide_out_right);
+
+        } else if (onStartCount == 1) {
+            onStartCount++;
+        }
+
+    }
+	@Override
+	public boolean onOptionsItemSelected(MenuItem m)
+	{
+		finish();
+		return true;
+	}
+
+}

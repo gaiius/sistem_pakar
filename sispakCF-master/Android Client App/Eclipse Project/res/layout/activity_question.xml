@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/questionParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity" >
+
+    <TextView
+        android:id="@+id/qText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="Silakan jawab pertanyaan yang akan ditampilkan "
+        android:textSize="22sp"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/qText"
+        android:layout_margin="10dp"
+        android:text="Mulai" />
+
+    <LinearLayout
+        android:id="@+id/yesNoWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom|center_horizontal" >
+
+        <Button
+            android:id="@+id/yesBtn"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Ya" />
+
+        <Button
+            android:id="@+id/noBtn"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Tidak" />
+    </LinearLayout>
+
+</RelativeLayout>

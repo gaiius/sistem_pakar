@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       xmlns:android="http://schemas.android.com/apk/res/android">
+       <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			        android:id="@+id/textView1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="20dp"
+			        android:paddingRight="20dp"
+			        android:paddingTop="10dp"
+			        android:text="Nama"
+			        android:textSize="20sp"
+			        android:textStyle="bold" />
+			
+			    <TextView
+			        android:id="@+id/txt_nama_komponen"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="20dp"
+			        android:paddingRight="20dp"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+			    <TextView
+			        android:id="@+id/textView2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="20dp"
+			        android:paddingRight="20dp"
+			        android:paddingTop="10dp"
+			        android:text="Deskripsi"
+			        android:textStyle="bold"
+			        android:textSize="20sp" />
+			
+			    <TextView
+			        android:id="@+id/txt_desk_komponen"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="20dp"
+			        android:paddingRight="20dp"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+			    <TextView
+			        android:id="@+id/textView3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="20dp"
+			        android:paddingRight="20dp"
+			        android:paddingTop="10dp"
+			        android:text="Pencegahan"
+			        android:textStyle="bold"
+			        android:textSize="20sp" />
+			
+			    <TextView
+			        android:id="@+id/txt_pencegahan_komponen"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingBottom="40dp"
+			        android:paddingLeft="20dp"
+			        android:paddingRight="20dp"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+			</LinearLayout>
+			
+		</ScrollView>
+</LinearLayout>
